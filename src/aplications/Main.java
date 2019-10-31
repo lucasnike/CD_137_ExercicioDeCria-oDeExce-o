@@ -38,8 +38,8 @@ public class Main {
 			System.err.println(e.getMessage());
 		}catch(MyWrongArgumentsException e) {
 			System.out.println(e.getMessage());
-		}catch(Exception e) {
-			System.out.println("Algo errado ocorreu reinicie o programa");
+		}catch(RuntimeException e) {
+			System.err.println("Um erro inesperado ocorreu!!!");
 		}
 		finally {
 			tec.close();
